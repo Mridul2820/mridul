@@ -1,0 +1,19 @@
+.carousel{
+    &__landscape{
+        grid-column: col-start 5 / center-end;
+
+        @media only screen and (max-width: $bp-small){
+            grid-column: center-start / center-end;
+
+            margin-right: 1rem;
+        }
+    }
+
+    &__potrait{
+        grid-column: center-start / col-end 3;
+
+        @media only screen and (max-width: $bp-small){
+            grid-column: center-start / center-end;
+        }
+    }
+}

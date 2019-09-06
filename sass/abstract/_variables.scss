@@ -1,0 +1,45 @@
+//colors
+$color-primary: #007b31;
+$color-primary-light: #009d3e;
+$color-primary-dark: #004400;
+
+$color-secondary: #032535;
+$color-secondary-light: #008c9e;
+
+$color-tertiary:  #800739;
+
+$color-grey-light-1 : #f7f7f7;
+$color-grey-light-2 : #eee;
+
+$color-gray-dark-1 : #777;
+$color-gray-dark-2 : #999;
+$color-gray-dark-3 : #333;
+
+$color-white : #fff;
+$color-black : #000;
+
+
+//font
+$default-font-size : 1.6rem;
+
+// box shadow
+$box-shadow-dark: 0 1rem 4rem rgba($color-gray-dark-1, .5);
+$box-shadow-light: 0 1rem 2rem rgba($color-gray-dark-1, .2);
+
+// border
+$border-1: 3px solid $color-primary-dark;
+$border-2: 3.5px solid $color-primary-light;
+$border-4: 3px solid $color-gray-dark-3;
+
+// fonts
+
+$font-shadowsintolight: 'Shadows Into Light', sans-serif;
+$font-livvic: 'Livvic', sans-serif;
+
+// Responsive Breakpoint
+$bp-largest: 75em;       //1200px
+$bp-large: 62.5em;       //1000px
+$bp-medium-lg: 56.25em;  //900px
+$bp-medium-sm: 50em;     //750px
+$bp-small: 37.5em;       //600px
+$bp-smallest: 31.25em;   //500px

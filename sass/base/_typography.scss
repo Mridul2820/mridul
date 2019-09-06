@@ -1,0 +1,24 @@
+.header__text{
+    color: $color-grey-light-1;
+    font-family: $font-livvic;
+    
+    &--main{
+        font-size: 6rem;
+        letter-spacing: 2.6rem;
+        animation: moveInRight 1s ease-out;
+
+        @media only screen and (max-width: $bp-smallest){
+            letter-spacing: 2.4rem;
+        }
+    }
+
+    &--sub{
+        font-size: 2rem;
+        letter-spacing: 1.9rem;
+        animation: moveInLeft 1s ease-out;
+
+        @media only screen and (max-width: $bp-smallest){
+            letter-spacing: 1.55rem;
+        }
+    }
+}

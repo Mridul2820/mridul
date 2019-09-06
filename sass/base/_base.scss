@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; //1rem = 10px
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 56.25%; //1 rem = 9px;  9px/16px = 56.25%
+    }
+
+    @media only screen and (max-width: $bp-medium-sm){
+        font-size: 50%; //1 rem = 8px; 8px/16px = 50%
+    }
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 43.75%; //1 rem = 7px
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        font-size: 37.5%; //1 rem = 6px
+    }
+}
+
+body{
+    font-family: $font-livvic;
+    color: $color-gray-dark-1;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 0 5rem;
+
+    @media only screen and (max-width: $bp-largest){
+        padding: 0;
+    }
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 85vh repeat(3, min-content) 25vw repeat(4, min-content);
+    grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(5rem, 1fr) [full-end];
+
+    grid-row-gap: 1.5rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-template-rows: 85vh repeat(4, min-content)30vw repeat(5, min-content);
+    }
+}

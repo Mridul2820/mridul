@@ -1,0 +1,24 @@
+// cd E:\Web_Devlopment\website\imridul\v1
+
+// npm start
+
+// npm run build:css
+
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/cards";
+@import "components/carousel";
+
+@import "layout/footer";
+@import "layout/gallery";
+@import "layout/landing";
+@import "layout/navbar";
+
+@import "vendors/bootstrap";
