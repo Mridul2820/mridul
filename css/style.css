@@ -404,6 +404,15 @@ body {
     z-index: 10; }
   .nav-bar__link:hover {
     color: #004400 !important; }
+  .nav-bar__icon {
+    transition: all .2s;
+    margin-left: 2rem;
+    width: 4em;
+    height: 4em;
+    fill: #008c9e;
+    display: inline-block; }
+    .nav-bar__icon--camera:hover {
+      fill: #009d3e; }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)

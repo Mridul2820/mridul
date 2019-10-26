@@ -55,4 +55,19 @@
     // @media only screen and (max-width: $bp-small){
     //     height: 8rem;
     // }
+
+    &__icon {
+        transition: all .2s;
+        margin-left: 2rem;
+        width: 4em;
+        height: 4em;
+        fill: $color-secondary-light;
+        display: inline-block;
+        &--camera{
+            
+            &:hover{
+                fill: $color-primary-light;
+            }
+        }
+    }
 }
