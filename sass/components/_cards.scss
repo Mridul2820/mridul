@@ -1,6 +1,4 @@
 .image-card{
-    
-
     &--1{
         grid-column: center-start / col-end 4;
 
@@ -47,6 +45,35 @@
 .gallery-card{
     grid-column: full-start / full-end;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__container{
+        position: relative;
+        overflow: hidden;
+    }
+
+    &-caption{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: all 0.5s;
+        background-color: black;
+        transform: translateY(100%);
+    }
+
+    &__img{
+        width: 100%;
+        transition: all .5s;
+    }
+
     &__titel{
         font-size: 2.5rem;
         font-family: $font-livvic;
@@ -66,5 +93,13 @@
 
     &__desc{
         font-size: 1.8rem
+    }
+
+    &__container:hover .gallery-card-caption {
+        transform: translateY(0);
+    }
+    
+    &__container:hover .gallery-card__img {
+        transform: translateY(-30%);
     }
 }
