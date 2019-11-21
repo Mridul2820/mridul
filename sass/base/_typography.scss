@@ -3,19 +3,34 @@
     font-family: $font-livvic;
     
     &--main{
-        font-size: 6rem;
-        letter-spacing: 2.6rem;
-        animation: moveInRight 1s ease-out;
+        padding-bottom: 2rem;
+        font-size: 9rem;
+        letter-spacing: 3rem;
+        line-height: 9rem;
+        text-transform: uppercase;
+        text-shadow: 0 1px 0 #efefef,
+                     0 2px 0 #efefef,
+                     0 3px 0 #efefef,
+                     0 4px 0 #efefef,
+                     0 30px 5px rgba(0,0,0,.8);
+        // animation: moveInRight 1s ease-out 1s;
+        animation: float 3s linear infinite alternate;
 
+        @media only screen and (max-width: $bp-smaller){
+            padding-bottom: 4rem;
+        }
+    
         @media only screen and (max-width: $bp-smallest){
             letter-spacing: 2.4rem;
+            padding-bottom: 5rem;
         }
     }
 
     &--sub{
         font-size: 2rem;
-        letter-spacing: 1.9rem;
-        animation: moveInLeft 1s ease-out;
+        letter-spacing: 2rem;
+        // animation: moveInLeft 1s ease-out;
+
 
         @media only screen and (max-width: $bp-smallest){
             letter-spacing: 1.55rem;

@@ -12,43 +12,42 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>imridul | Vision through my lens</title>
+    <title>mridul | Vision through my lens</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark nav-bar">
+<nav class="navbar navbar-expand-md sticky-top navbar-dark nav-bar">
+    <a href="#" class="navbar-brand nav-bar__link">
+        <svg class="nav-bar__icon nav-bar__icon--camera">
+            <use xlink:href="images/icon/sprite.svg#icon-camera"></use>
+        </svg>
+    </a>
 
-        <a href="#" class="navbar-brand nav-bar__link">
-            <svg class="nav-bar__icon nav-bar__icon--camera">
-                <use xlink:href="images/icon/sprite.svg#icon-camera"></use>
-            </svg>
-        </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item nav-bar__item lp-small">
-                    <a href="#landing" class="nav-link nav-bar__link">Home</a>
-                </li>
-                <li class="nav-item nav-bar__item lp-small">
-                    <a href="#" class="nav-link nav-bar__link">Content</a>
-                </li>
-                <li class="nav-item nav-bar__item">
-                    <a href="#" class="nav-link nav-bar__link">Blog</a>
-                </li>
-                <li class="nav-item nav-bar__item">
-                    <a href="#newsletter" class="nav-link nav-bar__link">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-bar__item lp-small">
+                <a href="#landing" class="nav-link nav-bar__link">Home</a>
+            </li>
+            <li class="nav-item nav-bar__item lp-small">
+                <a href="#" class="nav-link nav-bar__link">Content</a>
+            </li>
+            <li class="nav-item nav-bar__item">
+                <a href="#" class="nav-link nav-bar__link">Blog</a>
+            </li>
+            <li class="nav-item nav-bar__item">
+                <a href="#newsletter" class="nav-link nav-bar__link">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 <div class="grid-container">
     <section class="d-flex align-items-center justify-content-center landing">
         <div class="container text-white text-center showcase header__text">
-            <h1 class="header__text--main mb-0">imridul.com</h1>
+            <h1 class="header__text--main">Mridul</h1>
             <h3 class="header__text--sub">Vision through my lens</h3>
         </div>
     </section>
@@ -135,16 +134,14 @@
         </div>
     </section>
 
-    <div class="image-card--1 mr-3">
-        <img src="images/Cards/sunsate_29_apr_from_helipad.jpg" alt="Card image 1" class="image-card--1__img" data-toggle="modal" data-target="#image-card--1">
-    </div>
-
-    <div class="modal fade" id="image-card--1" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <img src="images/Cards/sunsate_29_apr_from_helipad.jpg" alt="gallery image 8" class="gallery-block__modal">
-            </div>
-        </div>
+    <div class="image-card--1">
+        <ul class="slideshow">
+            <li><img class="slideshow__img" src="images/Cards/sunsate_29_apr_from_helipad.jpg" alt="slideshow 1"></li>
+            <li><img class="slideshow__img" src="images/Cards/The_fireworks.jpg" alt="slideshow 2"></li>
+            <li><img class="slideshow__img" src="images/Cards/Boats_starting_time.jpg" alt="slideshow 3"></li>
+            <li><img class="slideshow__img" src="images/Carousel_landscape/sunset_sea_full_water.jpg" alt="slideshow 5"></li>
+            <li><img class="slideshow__img" src="images/Carousel_landscape/Sun_in_The_tree.jpg" alt="slideshow 4"></li>
+        </ul>
     </div>
 
     <div class="carousel__landscape">
@@ -217,8 +214,8 @@
         <div class="gallery-card__container">
             <img src="images/Gallery2_6photos/Bote_1_may.jpg" alt="Gallery Card 1" class="card-img-top gallery-card__img">
             <div class="gallery-card-caption">
-                <h5 class="card-title gallery-card__titel">The Last Boat</h5>
-                <h6 class="card-subtitle text-muted">
+                <h5 class="gallery-card__titel">The Last Boat</h5>
+                <h6 class="text-muted">
                     <svg class="gallery-card__icon">
                         <use xlink:href="images/icon/sprite.svg#icon-clock"></use>
                     </svg>
@@ -229,8 +226,8 @@
         <div class="gallery-card__container">
             <img src="images/Gallery2_6photos/Lamps.jpg" alt="Gallery Card 2" class="card-img-top gallery-card__img">
             <div class="gallery-card-caption">
-                <h5 class="card-title gallery-card__titel">The Festive Lights</h5>
-                <h6 class="card-subtitle text-muted">
+                <h5 class="gallery-card__titel">The Festive Lights</h5>
+                <h6 class="text-muted">
                     <svg class="gallery-card__icon">
                         <use xlink:href="images/icon/sprite.svg#icon-clock"></use>
                     </svg>
@@ -241,8 +238,8 @@
         <div class="gallery-card__container">
             <img src="images/Gallery2_6photos/Nut_trees_sunset.jpg" alt="Gallery Card 2" class="card-img-top gallery-card__img">
             <div class="gallery-card-caption">
-                <h5 class="card-title gallery-card__titel">Rays through Leaves</h5>
-                <h6 class="card-subtitle text-muted">
+                <h5 class="gallery-card__titel">Rays through Leaves</h5>
+                <h6 class="text-muted">
                     <svg class="gallery-card__icon">
                         <use xlink:href="images/icon/sprite.svg#icon-clock"></use>
                     </svg>
@@ -254,8 +251,8 @@
         <div class="gallery-card__container">
             <img src="images/Gallery2_6photos/bird_sky.jpg" alt="Gallery Card 4" class="card-img-top gallery-card__img">
             <div class="gallery-card-caption">
-                <h5 class="card-title gallery-card__titel">On it's Way</h5>
-                <h6 class="card-subtitle text-muted">
+                <h5 class="gallery-card__titel">On it's Way</h5>
+                <h6 class="text-muted">
                     <svg class="gallery-card__icon">
                         <use xlink:href="images/icon/sprite.svg#icon-clock"></use>
                     </svg>
@@ -266,8 +263,8 @@
         <div class="gallery-card__container">
             <img src="images/Gallery2_6photos/dark_clouds_temple_sunset.jpg" alt="Gallery Card 5" class="card-img-top gallery-card__img">
             <div class="gallery-card-caption">
-                <h5 class="card-title gallery-card__titel">A Cloudy Evening</h5>
-                <h6 class="card-subtitle text-mut">
+                <h5 class="gallery-card__titel">A Cloudy Evening</h5>
+                <h6 class="text-mut">
                     <svg class="gallery-card__icon">
                         <use xlink:href="images/icon/sprite.svg#icon-clock"></use>
                     </svg>
@@ -278,8 +275,8 @@
         <div class="gallery-card__container">
             <img src="images/Gallery2_6photos/sunset_trees.jpg" alt="Gallery Card 6" class="card-img-top gallery-card__img">
             <div class="gallery-card-caption">
-                <h5 class="card-title gallery-card__titel">Sunset In the Forest</h5>
-                <h6 class="card-subtitle text-muted">
+                <h5 class="gallery-card__titel">Sunset In the Forest</h5>
+                <h6 class="text-muted">
                     <svg class="gallery-card__icon">
                         <use xlink:href="images/icon/sprite.svg#icon-clock"></use>
                     </svg>

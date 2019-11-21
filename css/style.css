@@ -18,7 +18,7 @@
     opacity: 1;
     transform: translateX(0); } }
 
-@keyframes imageAnimation {
+@keyframes cardSlideshowAnimation {
   0% {
     opacity: 0;
     animation-timing-function: ease-in; }
@@ -29,6 +29,12 @@
     opacity: 1; }
   30% {
     opacity: 0; } }
+
+@keyframes float {
+  from {
+    transform: rotate(3deg); }
+  to {
+    transform: rotate(-3deg); } }
 
 *,
 *::after,
@@ -76,16 +82,23 @@ body {
   color: #f7f7f7;
   font-family: "Livvic", sans-serif; }
   .header__text--main {
-    font-size: 6rem;
-    letter-spacing: 2.6rem;
-    animation: moveInRight 1s ease-out; }
+    padding-bottom: 2rem;
+    font-size: 9rem;
+    letter-spacing: 3rem;
+    line-height: 9rem;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #efefef, 0 2px 0 #efefef, 0 3px 0 #efefef, 0 4px 0 #efefef, 0 30px 5px rgba(0, 0, 0, 0.8);
+    animation: float 3s linear infinite alternate; }
+    @media only screen and (max-width: 43.75em) {
+      .header__text--main {
+        padding-bottom: 4rem; } }
     @media only screen and (max-width: 31.25em) {
       .header__text--main {
-        letter-spacing: 2.4rem; } }
+        letter-spacing: 2.4rem;
+        padding-bottom: 5rem; } }
   .header__text--sub {
     font-size: 2rem;
-    letter-spacing: 1.9rem;
-    animation: moveInLeft 1s ease-out; }
+    letter-spacing: 2rem; }
     @media only screen and (max-width: 31.25em) {
       .header__text--sub {
         letter-spacing: 1.55rem; } }
@@ -95,11 +108,30 @@ body {
 
 .image-card--1 {
   grid-column: center-start / col-end 4; }
-  .image-card--1__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block; }
+  .image-card--1 .slideshow {
+    list-style: none;
+    position: relative; }
+    .image-card--1 .slideshow__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block; }
+  .image-card--1 .slideshow li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: cardSlideshowAnimation 25s linear infinite; }
+  .image-card--1 .slideshow li:nth-child(1) {
+    animation-delay: .1s; }
+  .image-card--1 .slideshow li:nth-child(2) {
+    animation-delay: 5s; }
+  .image-card--1 .slideshow li:nth-child(3) {
+    animation-delay: 10s; }
+  .image-card--1 .slideshow li:nth-child(4) {
+    animation-delay: 15s; }
+  .image-card--1 .slideshow li:nth-child(5) {
+    animation-delay: 20s; }
   @media only screen and (max-width: 37.5em) {
     .image-card--1 {
       grid-column: center-start / center-end; } }
@@ -126,6 +158,9 @@ body {
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
+  @media only screen and (max-width: 37.5em) {
+    .gallery-card {
+      grid-template-columns: repeat(2, 1fr); } }
   .gallery-card__container {
     position: relative;
     overflow: hidden; }
@@ -133,7 +168,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 30%;
+    height: 35%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -144,6 +179,7 @@ body {
     background-color: black;
     transform: translateY(100%); }
   .gallery-card__img {
+    height: 100%;
     width: 100%;
     transition: all .5s; }
   .gallery-card__titel {
@@ -168,8 +204,7 @@ body {
   grid-column: col-start 5 / center-end; }
   @media only screen and (max-width: 37.5em) {
     .carousel__landscape {
-      grid-column: center-start / center-end;
-      margin-right: 1rem; } }
+      grid-column: center-start / center-end; } }
 
 .carousel__potrait {
   grid-column: center-start / col-end 3; }
@@ -261,7 +296,7 @@ body {
     object-fit: cover;
     transition: all .2s; }
   .gallery-squre-container:hover .gallery-squre-container__img {
-    transform: scale(1.1) rotate(-5deg); }
+    transform: scale(1.2) rotate(-10deg); }
   @media only screen and (max-width: 37.5em) {
     .gallery-squre {
       grid-template-columns: repeat(2, 1fr); } }
@@ -392,11 +427,8 @@ body {
         grid-column: 4 / span 2; } }
   @media only screen and (max-width: 37.5em) {
     .gallery-wall {
-      grid-row-gap: .5;
+      grid-row-gap: .5rem;
       grid-column-gap: .5rem; } }
-  @media only screen and (max-width: 31.25em) {
-    .gallery-wall {
-      grid-column-gap: 0; } }
 
 .landing {
   background-image: linear-gradient(to right bottom, rgba(0, 157, 62, 0.5), rgba(0, 68, 0, 0.5)), url(../images/Background/tram_dharmatala_28_feb_2k18.jpg);
@@ -446,8 +478,10 @@ body {
     height: 4em;
     fill: #008c9e;
     display: inline-block; }
-    .nav-bar__icon--camera:hover {
-      fill: #009d3e; }
+    .nav-bar__icon--camera {
+      transition: all 1s; }
+      .nav-bar__icon--camera:hover {
+        fill: #009d3e; }
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)

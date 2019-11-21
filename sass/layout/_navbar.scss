@@ -65,6 +65,7 @@
         fill: $color-secondary-light;
         display: inline-block;
         &--camera{
+            transition: all 1s;
             
             &:hover{
                 fill: $color-primary-light;

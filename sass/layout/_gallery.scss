@@ -56,7 +56,7 @@
     }
 
     &-container:hover &-container__img{
-        transform: scale(1.1) rotate(-5deg);
+        transform: scale(1.2) rotate(-10deg);
     }
 
     @media only screen and (max-width: $bp-small){
@@ -278,14 +278,8 @@
     }
 
     @media only screen and (max-width: $bp-small){
-        grid-row-gap: .5;
+        grid-row-gap: .5rem;
         grid-column-gap: .5rem;
     }
-
-    @media only screen and (max-width: $bp-smallest){
-        grid-column-gap: 0;
-    }
-
-    
 }
 

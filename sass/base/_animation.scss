@@ -26,8 +26,7 @@
     }
 }
 
-
-@keyframes imageAnimation { 
+@keyframes cardSlideshowAnimation { 
     0% { 
       opacity: 0; 
       animation-timing-function: ease-in;
@@ -42,4 +41,10 @@
     30% {
       opacity: 0
     }
+}
+
+@keyframes float {
+    from { transform: rotate(3deg); }
+
+    to { transform: rotate(-3deg); }
 }
