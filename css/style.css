@@ -107,7 +107,8 @@ body {
   letter-spacing: .5rem; }
 
 .image-card--1 {
-  grid-column: center-start / col-end 4; }
+  grid-column: center-start / col-end 4;
+  background-color: #000; }
   .image-card--1 .slideshow {
     list-style: none;
     position: relative; }
