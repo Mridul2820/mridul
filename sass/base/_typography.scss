@@ -1,6 +1,14 @@
-.header__text{
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
     color: $color-grey-light-1;
     font-family: $font-livvic;
+    z-index: 10;
+
     
     &--main{
         padding-bottom: 2rem;
@@ -13,7 +21,6 @@
                      0 3px 0 #efefef,
                      0 4px 0 #efefef,
                      0 30px 5px rgba(0,0,0,.8);
-        // animation: moveInRight 1s ease-out 1s;
         animation: float 3s linear infinite alternate;
 
         @media only screen and (max-width: $bp-smaller){
@@ -28,12 +35,10 @@
 
     &--sub{
         font-size: 2rem;
-        letter-spacing: 2rem;
-        // animation: moveInLeft 1s ease-out;
-
+        letter-spacing: 2.5rem;
 
         @media only screen and (max-width: $bp-smallest){
-            letter-spacing: 1.55rem;
+            letter-spacing: 2rem;
         }
     }
 }
