@@ -71,12 +71,12 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 88vh repeat(3, min-content) 25vw repeat(4, min-content);
+  grid-template-rows: 97vh repeat(3, min-content) 25vw repeat(4, min-content);
   grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
   grid-row-gap: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .grid-container {
-      grid-template-rows: 85vh repeat(4, min-content) 30vw repeat(5, min-content); } }
+      grid-template-rows: 95vh repeat(4, min-content) 30vw repeat(5, min-content); } }
 
 .landing-text {
   position: absolute;
