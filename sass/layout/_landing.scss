@@ -1,10 +1,5 @@
 .landing{
-    // background-image: linear-gradient(
-    //     to right bottom,
-    //     rgba($color-primary-light, 0.5),
-    //     rgba($color-primary-dark, 0.5)), 
-    // url(../images/Background/tram_dharmatala_28_feb_2k18.jpg);
-
+    margin-top: 2rem;
     position: relative;
     text-align: center;
     background-color: $color-black;
@@ -52,7 +47,7 @@
     animation-delay: 20s; 
 }
 .landing-slideshow li:nth-child(4) { 
-    background-image: url(../images/Background/Fishing_nets.jpg);
+    background-image: url(../images/Background/Sunset_blue_sky.jpg);
     animation-delay: 30s; 
 }
 .landing-slideshow li:nth-child(5) { 

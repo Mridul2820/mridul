@@ -149,15 +149,16 @@
         </div>
     </section>
 
-    <div class="image-card--1">
-        <ul class="slideshow">
-            <li><img class="slideshow__img" src="images/Cards/sunsate_29_apr_from_helipad.jpg" alt="slideshow 1"></li>
-            <li><img class="slideshow__img" src="images/Cards/The_fireworks.jpg" alt="slideshow 2"></li>
-            <li><img class="slideshow__img" src="images/Cards/Boats_starting_time.jpg" alt="slideshow 3"></li>
-            <li><img class="slideshow__img" src="images/Carousel_landscape/sunset_sea_full_water.jpg" alt="slideshow 5"></li>
-            <li><img class="slideshow__img" src="images/Carousel_landscape/Sun_in_The_tree.jpg" alt="slideshow 4"></li>
+    <section class="card-image">
+        <ul class="card-image__slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
-    </div>
+    </section>
+
 
     <div class="carousel__landscape">
         <div id="carouselLandscape" class="carousel slide gallery-carousel__landscape--main" data-ride="carousel" data-interval="2000">
@@ -224,6 +225,27 @@
     </section>
 
     <section class="gallery-jumbotron"></section>
+
+    <section class="gallery-potrait">
+        <div class="gallery-potrait__item">
+            <img src="images/Gallery_potrait/crabshell.jpg" alt="gallery potrait 1" class="gallery-potrait__img">
+        </div>
+        <div class="gallery-potrait__item">
+            <img src="images/Gallery_potrait/digha station.jpg" alt="gallery potrait 2" class="gallery-potrait__img">
+        </div>
+        <div class="gallery-potrait__item">
+            <img src="images/Gallery_potrait/photo_through_phone.jpg" alt="gallery potrait 3" class="gallery-potrait__img">
+        </div>
+        <div class="gallery-potrait__item">
+            <img src="images/Gallery_potrait/taxi_esplaned_4july.jpg" alt="gallery potrait 4" class="gallery-potrait__img">
+        </div>
+        <div class="gallery-potrait__item">
+            <img src="images/Gallery_potrait/trainline.jpg" alt="gallery potrait 5" class="gallery-potrait__img">
+        </div>
+        <div class="gallery-potrait__item">
+            <img src="images/Gallery_potrait/lights_night_dewali.jpg" alt="gallery potrait 6" class="gallery-potrait__img">
+        </div>
+    </section>
 
     <section class="gallery-card">
         <div class="gallery-card__container">
@@ -383,11 +405,39 @@
         </div>
     </div>
 
-    <div class="image-card--2">
-        <div class="image-card--2__item"><img src="images/Cards/Udaipur_masti.jpg" alt="Gallery image 13" class="image-card--2__img"></div>
-        <div class="image-card--2__item"><img src="images/Cards/Boats_starting_time.jpg" alt="Gallery image 13" class="image-card--2__img"></div>
-        <div class="image-card--2__item"><img src="images/Cards/Mango_flowers.jpg" alt="Gallery image 13" class="image-card--2__img"></div>
-        <div class="image-card--2__item"><img src="images/Cards/Colorful_flowers.jpg" alt="Gallery image 13" class="image-card--2__img"></div>
+    <div class="image-card">
+        <div class="image-card__item"><img src="images/Cards/Udaipur_masti.jpg" data-target="#image-card--1" data-toggle="modal" alt="Gallery image 13" class="image-card__img"></div>
+        <div class="modal fade" id="image-card--1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="images/Cards/Udaipur_masti.jpg" alt="image card 1" class="image-card__modal">
+                </div>
+            </div>
+        </div>
+        <div class="image-card__item"><img src="images/Cards/Boats_starting_time.jpg" data-target="#image-card--2" data-toggle="modal" alt="Gallery image 13" class="image-card__img"></div>
+        <div class="modal fade" id="image-card--2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="images/Cards/Boats_starting_time.jpg" alt="image card 2" class="image-card__modal">
+                </div>
+            </div>
+        </div>
+        <div class="image-card__item"><img src="images/Cards/Mango_flowers.jpg" data-target="#image-card--3" data-toggle="modal" alt="Gallery image 13" class="image-card__img"></div>
+        <div class="modal fade" id="image-card--3" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="images/Cards/Mango_flowers.jpg" alt="image card 3" class="image-card__modal">
+                </div>
+            </div>
+        </div>
+        <div class="image-card__item"><img src="images/Cards/Colorful_flowers.jpg" data-target="#image-card--4" data-toggle="modal" alt="Gallery image 13" class="image-card__img"></div>
+        <div class="modal fade" id="image-card--4" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="images/Cards/Colorful_flowers.jpg" alt="image card 4" class="image-card__modal">
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">

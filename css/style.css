@@ -71,12 +71,12 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 97vh repeat(3, min-content) 25vw repeat(4, min-content);
   grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+  grid-template-rows: 97vh repeat(3, min-content) 25vw repeat(5, min-content);
   grid-row-gap: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .grid-container {
-      grid-template-rows: 95vh repeat(4, min-content) 30vw repeat(5, min-content); } }
+      grid-template-rows: 95vh min-content 60vh repeat(2, min-content) 30vw repeat(5, min-content); } }
 
 .landing-text {
   position: absolute;
@@ -112,54 +112,74 @@ body {
 .lp-small {
   letter-spacing: .5rem; }
 
-.image-card--1 {
+.card-image {
   grid-column: center-start / col-end 4;
-  background-color: #000; }
-  .image-card--1 .slideshow {
-    list-style: none;
-    position: relative; }
-    .image-card--1 .slideshow__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block; }
-  .image-card--1 .slideshow li {
-    position: absolute;
+  background-color: #000;
+  text-align: center;
+  background-color: #000;
+  /* Older browser support - .no-cssanimations class added by modernizr */ }
+  .card-image__slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    opacity: 0;
-    animation: cardSlideshowAnimation 25s linear infinite; }
-  .image-card--1 .slideshow li:nth-child(1) {
-    animation-delay: .1s; }
-  .image-card--1 .slideshow li:nth-child(2) {
-    animation-delay: 5s; }
-  .image-card--1 .slideshow li:nth-child(3) {
+    list-style: none;
+    z-index: 0; }
+    .card-image__slideshow li {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 50% 50%;
+      opacity: 0;
+      z-index: 0;
+      animation: cardSlideshowAnimation 50s linear infinite; }
+  .card-image__slideshow li:nth-child(1) {
+    background-image: url(../images/Cards/sunsate_29_apr_from_helipad.jpg); }
+  .card-image__slideshow li:nth-child(2) {
+    background-image: url(../images/Cards/full_puja.jpg);
     animation-delay: 10s; }
-  .image-card--1 .slideshow li:nth-child(4) {
-    animation-delay: 15s; }
-  .image-card--1 .slideshow li:nth-child(5) {
+  .card-image__slideshow li:nth-child(3) {
+    background-image: url(../images/Cards/polo_talsari.jpg);
     animation-delay: 20s; }
+  .card-image__slideshow li:nth-child(4) {
+    background-image: url(../images/Cards/Boats_starting_time.jpg);
+    animation-delay: 30s; }
+  .card-image__slideshow li:nth-child(5) {
+    background-image: url(../images/Cards/The_fireworks.jpg);
+    animation-delay: 40s; }
+  .card-image .no-cssanimations .image-card__slideshow li {
+    opacity: 1; }
   @media only screen and (max-width: 37.5em) {
-    .image-card--1 {
+    .card-image {
       grid-column: center-start / center-end; } }
 
-.image-card--2 {
+.image-card {
   grid-column: col-start 4 / center-end;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
-  .image-card--2__img {
+  .image-card__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block; }
   @media only screen and (max-width: 37.5em) {
-    .image-card--2 {
+    .image-card {
       grid-column: center-start / center-end;
       display: flex;
       flex-direction: column; }
-      .image-card--2__img {
+      .image-card__img {
         padding: 2rem 0;
         border-top: 3px solid #333; } }
+  .image-card__modal {
+    width: 100%;
+    display: block; }
 
 .gallery-card {
   grid-column: full-start / full-end;
@@ -277,11 +297,11 @@ body {
   .gallery-block__img {
     width: 100%;
     display: block;
-    transition: all .2s;
     padding: 1.2rem;
-    border: 3.5px solid #009d3e; }
+    border: 3.5px solid #009d3e;
+    transition: all .2s; }
     .gallery-block__img:hover, .gallery-block__img:active {
-      transform: scale(0.95);
+      transform: scale(0.95) translateY(-1rem);
       box-shadow: 0 1rem 4rem rgba(119, 119, 119, 0.5); }
   .gallery-block__modal {
     width: 100%;
@@ -316,6 +336,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 100%; }
+
+.gallery-potrait {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+  .gallery-potrait__img {
+    width: 100%;
+    display: block; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery-potrait {
+      grid-template-columns: repeat(3, 1fr); } }
 
 .gallery-wall {
   grid-column: full-start / full-end;
@@ -438,6 +469,7 @@ body {
       grid-column-gap: .5rem; } }
 
 .landing {
+  margin-top: 2rem;
   position: relative;
   text-align: center;
   background-color: #000;
@@ -478,7 +510,7 @@ body {
   animation-delay: 20s; }
 
 .landing-slideshow li:nth-child(4) {
-  background-image: url(../images/Background/Fishing_nets.jpg);
+  background-image: url(../images/Background/Sunset_blue_sky.jpg);
   animation-delay: 30s; }
 
 .landing-slideshow li:nth-child(5) {
