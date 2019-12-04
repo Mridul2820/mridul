@@ -242,11 +242,11 @@ body {
 .footer {
   grid-column: full-start / full-end;
   background-color: #032535;
-  margin: 0; }
+  margin: 0;
+  padding-top: 3rem; }
 
 .nav-footer {
   list-style: none;
-  margin-top: 3rem;
   display: flex;
   justify-content: center; }
   .nav-footer__item {
