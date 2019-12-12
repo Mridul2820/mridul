@@ -3,7 +3,16 @@
 
     background-color: $color-secondary;
     margin: 0;
-   
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+
+    &__img{
+        width: 15rem;
+        height: auto;
+    }
 }
 
 .nav-footer{
@@ -53,7 +62,7 @@
     justify-content: center;
 
     &__item{
-        padding: 3rem;
+        padding: 2rem;
     }
 
     &__icon {
