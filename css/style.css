@@ -254,8 +254,20 @@ body {
   grid-column: full-start / full-end;
   background-color: #032535;
   margin: 0; }
+  .footer__logo-box {
+    display: flex;
+    justify-content: center; }
   .footer__logo {
     width: 150px; }
+    .footer__logo:hover {
+      animation-name: spin;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+    .footer__logo--text {
+      color: #007b31;
+      font-family: "Shadows Into Light", sans-serif;
+      font-size: 3rem;
+      letter-spacing: 1rem; }
 
 .nav-footer {
   list-style: none;

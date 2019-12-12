@@ -4,14 +4,27 @@
     background-color: $color-secondary;
     margin: 0;
 
-    // &__logo-box {
-    //     display: flex;
-    //     justify-content: center;
-    // }
-
-    &__logo {
-        width: 150px;
+    &__logo-box {
+        display: flex;
+        justify-content: center;
     }
+
+    &__logo{
+        width: 150px;
+           
+        &:hover{
+            animation-name: spin;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        &--text{
+            color: $color-primary;
+            font-family: $font-shadowsintolight;
+            font-size: 3rem;
+            letter-spacing: 1rem;
+        }
+    } 
 }
 
 .nav-footer{
