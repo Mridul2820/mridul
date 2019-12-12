@@ -246,9 +246,6 @@ body {
   grid-column: full-start / full-end;
   background-color: #032535;
   margin: 0; }
-  .footer__logo-box {
-    display: flex;
-    justify-content: center; }
   .footer__logo {
     width: 15rem; }
 
