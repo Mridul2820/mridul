@@ -250,8 +250,7 @@ body {
     display: flex;
     justify-content: center; }
   .footer__logo {
-    width: 15rem;
-    height: 15rem; }
+    width: 15rem; }
 
 .nav-footer {
   list-style: none;
