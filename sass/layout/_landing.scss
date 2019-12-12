@@ -7,6 +7,25 @@
 
     grid-column: full-start / full-end;
     grid-row: 1 / 2;
+
+    &__logo-box {
+        opacity: 80%;
+        position: absolute;
+        top: 3rem;
+        left: 4rem;
+        z-index: 10;
+    }
+
+    &__logo {
+        height: 13rem;
+
+        
+        &:hover{
+            animation-name: spin;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+    }
 }
 
 

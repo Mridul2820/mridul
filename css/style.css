@@ -18,6 +18,14 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes spin {
+  0% {
+    transform: rotateY(0); }
+  60% {
+    transform: rotateY(-360deg); }
+  100% {
+    transform: rotateY(360deg); } }
+
 @keyframes cardSlideshowAnimation {
   0% {
     opacity: 0;
@@ -246,6 +254,9 @@ body {
   grid-column: full-start / full-end;
   background-color: #032535;
   margin: 0; }
+  .footer__logo-box {
+    display: flex;
+    justify-content: center; }
   .footer__logo {
     width: 15rem; }
 
@@ -479,6 +490,18 @@ body {
   background-color: #000;
   grid-column: full-start / full-end;
   grid-row: 1 / 2; }
+  .landing__logo-box {
+    opacity: 80%;
+    position: absolute;
+    top: 3rem;
+    left: 4rem;
+    z-index: 10; }
+  .landing__logo {
+    height: 13rem; }
+    .landing__logo:hover {
+      animation-name: spin;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
 
 .landing-slideshow {
   width: 100%;
