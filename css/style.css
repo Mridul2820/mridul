@@ -258,7 +258,7 @@ body {
     display: flex;
     justify-content: center; }
   .footer__logo {
-    width: 150px; }
+    width: 10rem; }
     .footer__logo:hover {
       animation-name: spin;
       animation-duration: 1s;
