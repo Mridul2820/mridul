@@ -26,13 +26,17 @@
   100% {
     transform: rotateY(360deg); } }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0); }
-  50% {
-    transform: rotate(180deg); }
+@keyframes shake {
+  20% {
+    transform: rotate(0deg); }
+  40% {
+    transform: rotate(50deg); }
+  60% {
+    transform: rotate(-50deg); }
+  80% {
+    transform: rotate(50deg); }
   100% {
-    transform: rotate(-180deg); } }
+    transform: rotate(0deg); } }
 
 @keyframes cardSlideshowAnimation {
   0% {
@@ -270,8 +274,8 @@ body {
   .footer__logo {
     width: 10rem; }
     .footer__logo:hover {
-      animation-name: rotate;
-      animation-duration: .5s;
+      animation-name: shake;
+      animation-duration: 1s;
       animation-timing-function: ease-in-out; }
   .footer__text {
     color: #007b31;

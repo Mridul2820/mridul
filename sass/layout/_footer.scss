@@ -15,8 +15,8 @@
         width: 10rem;
            
         &:hover{
-            animation-name: rotate;
-            animation-duration: .5s;
+            animation-name: shake;
+            animation-duration: 1s;
             animation-timing-function: ease-in-out;
         }
     }
