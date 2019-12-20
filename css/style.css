@@ -96,10 +96,13 @@ body {
   grid-row-gap: 1.5rem; }
   @media only screen and (max-width: 37.5em) {
     .grid-container {
-      grid-template-rows: 95vh min-content 55vh repeat(2, min-content) 30vw repeat(5, min-content); } }
+      grid-template-rows: 95vh min-content 53vh repeat(2, min-content) 30vw repeat(5, min-content); } }
   @media only screen and (max-width: 31.25em) {
     .grid-container {
-      grid-template-rows: 95vh min-content 40vh repeat(2, min-content) 30vw repeat(5, min-content); } }
+      grid-template-rows: 50vh min-content 43vh repeat(2, min-content) 30vw repeat(5, min-content); } }
+  @media only screen and (max-width: 25em) {
+    .grid-container {
+      grid-template-rows: 50vh min-content 33vh repeat(2, min-content) 30vw repeat(5, min-content); } }
 
 .landing-text {
   position: absolute;
