@@ -56,6 +56,12 @@
   to {
     transform: rotate(-3deg); } }
 
+@keyframes infiniteSpin {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
 *,
 *::after,
 *::before {
@@ -275,11 +281,8 @@ body {
     align-items: center;
     padding-top: 2rem; }
   .footer__logo {
-    width: 10rem; }
-    .footer__logo:hover {
-      animation-name: shake;
-      animation-duration: 1s;
-      animation-timing-function: ease-in-out; }
+    width: 15rem;
+    animation: infiniteSpin 5s linear infinite; }
   .footer__text {
     color: #007b31;
     font-family: "Covered By Your Grace", cursive;

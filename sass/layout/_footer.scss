@@ -12,13 +12,8 @@
     }
 
     &__logo{
-        width: 10rem;
-           
-        &:hover{
-            animation-name: shake;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-        }
+        width: 15rem;
+        animation: infiniteSpin 5s linear infinite;
     }
 
     &__text{
