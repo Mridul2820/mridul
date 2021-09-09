@@ -1,3 +1,3 @@
 # mridul
 
-[Preview](https://mridul-beta.vercel.app/)
+[Preview](https://imridul.mridul.tech/)
