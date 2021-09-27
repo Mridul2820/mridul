@@ -1,3 +1,3 @@
-# This was my old website of images : imridul.com
+# This was my old website : imridul.com
 
 [Preview](https://imridul.mridul.tech/) of the site
