@@ -1,3 +1,5 @@
 # This was my old website : imridul.com
 
-[Preview](https://imridul.mridul.tech/) of the site
+<a href="https://imridul.mridul.tech/">
+  <img src="/screenshot.png" />
+</a>
