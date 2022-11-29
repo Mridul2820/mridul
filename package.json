@@ -22,6 +22,6 @@
     "postcss-cli": "^9.1.0"
   },
   "dependencies": {
-    "npm-check-updates": "^12.1.0"
+    "npm-check-updates": "^16.4.3"
   }
 }
